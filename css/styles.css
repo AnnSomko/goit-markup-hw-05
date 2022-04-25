@@ -83,6 +83,7 @@ strong {
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    transition: color var(--delay) var(--timing-function);
 }
 
 .menu__link:hover,
@@ -90,7 +91,7 @@ strong {
     color:var(--focus-color);
 }
 
-.menu__link::after {
+.first::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -99,13 +100,7 @@ strong {
     height: 4px;
     
     border-radius: 2px;
-    opacity: 0;
-    transition: opacity 250ms var(--timing-function);
     background-color: var(--focus-color);
-}
-
-.menu__link:hover:after {
-    opacity: 1;
 }
 
 .contacts__list {
@@ -120,6 +115,7 @@ strong {
 .contacts__icon {
     vertical-align: middle;
     fill: currentColor;
+    transition: fill var(--delay) var(--timing-function);
 }
 
 .contacts__icon:hover {
@@ -137,6 +133,7 @@ strong {
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em; 
+    transition: color var(--delay) var(--timing-function);
 }
 
 .mail:hover,.mail:focus,
@@ -361,6 +358,7 @@ strong {
     cursor: pointer;
     background-color: var(--title-color);
     color: var(--icon-color);
+    transition: background-color var(--delay) var(--timing-function), color var(--delay) var(--timing-function);
 }
 
 .team__btn:nth-child(4) {
@@ -407,6 +405,7 @@ strong {
     display: block;
     margin: 16px auto;
     fill: currentColor;
+    transition: color var(--delay) var(--timing-function), fill var(--delay) var(--timing-function);
 }
 
 .clients__link:hover {
@@ -483,6 +482,7 @@ strong {
     margin-right: 10px;
     display: flex;
     align-items: center;
+    transition: background-color var(--delay) var(--timing-function); 
 }
 
 .address__icon {
@@ -497,7 +497,17 @@ strong {
 
 
 /*------------ Portfolio ----------------*/
-
+.second::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    
+    border-radius: 2px;
+    background-color: var(--focus-color);
+}
 
 
 .main__list {
@@ -519,6 +529,7 @@ strong {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    transition: background-color var(--delay) var(--timing-function),color var(--delay) var(--timing-function),box-shadow var(--delay) var(--timing-function);
 }
 
 .main__item:not(:last-child) {
@@ -546,6 +557,7 @@ strong {
    margin-right: 30px;
    margin-bottom: 30px;
    position: relative;
+   transition: box-shadow var(--delay) var(--timing-function);
 }
 
 .section__images-item:hover {
