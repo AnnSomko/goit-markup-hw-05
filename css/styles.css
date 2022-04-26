@@ -78,6 +78,7 @@ strong {
     padding-bottom: 32px;
     position: relative;
     color: var(--brand-color);
+    cursor: pointer;
 
     font-size: 14px;
     font-weight: 500;
@@ -133,6 +134,7 @@ strong {
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em; 
+    cursor: pointer;
     transition: color var(--delay) var(--timing-function);
 }
 
